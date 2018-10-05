@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+// js library for date format
+// import { isMoment } from "../node_modules/moment";
 
 class Movie extends Component {
   render() {
+    const posterUrl = "https://image.tmdb.org/t/p/w185_and_h278_bestv2";
     return (
       <div className= "movie">
-        <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/4p1N2Qrt8j0H8xMHMHvtRxv9weZ.jpg"/>
+        <img src={posterUrl + this.props.poster_path} alt="Movie Poster"/>
         <ul>
-          <li><strong>Title:</strong> "Indiana Jones and the Last Crusade"</li>
-          <li><strong>Rating: 7.7,</strong></li>
-          <li><strong>Original Language:</strong> "en"</li>
-          <li><strong>Overview: </strong>
-            When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana must team up with Marcus Brody, Sallah and Elsa Schneider to follow in his father's footsteps and stop the Nazis from recovering the power of eternal life."
-          </li>
+          <li><strong>Title:</strong> {this.props.title}</li>
+          <li><strong>Rating:</strong> {this.props.rating}</li>
+          <li><strong>Release Date:</strong> {this.props.release_date}</li>
+          <li><strong>Synopsis:</strong> {this.props.overview}</li>
         </ul>
       </div>
     );
@@ -19,3 +20,12 @@ class Movie extends Component {
 }
 
 export default Movie;
+
+
+// {
+//   movieData.map(function(movie){
+//     return (
+
+//     );
+//   })
+// }
