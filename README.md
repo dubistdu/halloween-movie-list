@@ -1,2 +1,2 @@
 ### Halloween Movie Night
-#### Family Friendly Halloween moovie list React app
+#### Family Friendly Halloween movie list React app
