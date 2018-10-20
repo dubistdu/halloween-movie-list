@@ -1,16 +1,21 @@
 .App {
+  
+}
 
+.header-marign {
 }
 
 .App-header {
-  /* background-image: url('halloween-dark.jpg'); */
+  background-image: url('halloween_walpaper.jpg');
+  padding-top: 70px;
+  padding-bottom: 80px;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(50px + 2vmin);
-  color: #C99F3A;
+  color: #db4c0e;
   font-family: 'Sigmar One', cursive;
   margin-bottom: 0.5em;
   margin-top:1em;
