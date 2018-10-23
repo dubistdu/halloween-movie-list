@@ -18,7 +18,7 @@ class MovieList extends Component {
     const API_KEY = process.env.REACT_APP_MOVIE_DB_API_KEY;
 
     fetch(
-      API_KEY
+      'https://api.themoviedb.org/3/discover/movie?primary_release_year=1991&sort_by=popularity.desc&api_key=4bca9d676c29829609e7ce0c1134488b' + API_KEY
     )
     .then(response => response.json())
     .then(({results: movies}) => this.setState({movies}))
